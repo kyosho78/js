@@ -14,6 +14,21 @@ function palvelut() {
 
 }
 
+function hinnasto() {
+    let hinnasto = `<h2>Hinnasto</h2>
+   
+   
+          <p>Eläinlääkäri, 150€/tunti</p>
+          <p>Päiväjoito, 10€/tunti</p>
+          <p>Yöhoito, 5€/tunti</p>
+   
+    
+    `
+    document.getElementById("sisältö").innerHTML = hinnasto
+  
+
+}
+
 //Yhteystiedot
 function yhteystiedot() {
     document.getElementById("sisältö").innerHTML = ""
@@ -41,7 +56,7 @@ function yhteystiedot() {
 
 function tumma() {
     document.body.style.backgroundColor = "black";
-    document.body.style.color = "lightgreen"; // Optional: Change text color to white for better visibility
+    document.body.style.color = "lightgreen"; 
     localStorage.setItem("teema", "tumma")
 }
 
@@ -52,7 +67,7 @@ function tumma() {
 
 function vaalea() {
     document.body.style.backgroundColor = "white";
-    document.body.style.color = "black"; // Optional: Change text color to white for better visibility
+    document.body.style.color = "black"; 
     localStorage.setItem("teema", "vaalea")
 }
 
@@ -61,7 +76,7 @@ if (localStorage.getItem("teema") == "tumma") {
     tumma()
 }
 
-//Suoritetaan aina alussa, valinta jää muistiin
+
 else {
     vaalea()
 }
