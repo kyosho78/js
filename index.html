@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <center>
-         <h1>Sivusto testausta</h1>
+        <h1>Eläinhoitola</h1>
 
-         <h3 id="paikka"></h3>
+        <h3 id="paikka"></h3>
 
-         <button onclick="tervehdi()">Katso tervehdys</button>
+        <button onclick="tervehdi()">Katso tervehdys</button>
+        <button onclick="palvelut()">Palvelumme</button>
+        <button onclick="hinnasto()">Hinnasto</button>
+        <button onclick="yhteystiedot()">Yhteystiedot</button>
+
+        <div id="sisältö"></div>
+
+
 
     </center>
+    <script src="./index.js"></script>
 
     <script>
-        function tervehdi()
-        {
-        let tervehdys = "Tervetuloa sivulle!"
-        // alert(tervehdys)
-        document.getElementById("paikka").innerText = tervehdys
+        function tervehdi() {
+            let tervehdys = "Tervetuloa sivulle!"
+            // alert(tervehdys)
+            document.getElementById("paikka").innerText = tervehdys
         }
 
     </script>
@@ -30,4 +39,5 @@
 
 
 </body>
+
 </html>
