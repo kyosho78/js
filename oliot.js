@@ -33,7 +33,7 @@ var autot = [
     }
   });
   
-
+// TÄMÄ HAKU EI TOIMINUT
 // //Taulukoiden olioita
 // var autot = [{id: 1, merkki: "Toyota", vuosimalli: 2006, hinta: 3000},
 //  {id: 2, merkki: "Ford", vuosimalli: 2016, hinta: 7500},
@@ -56,6 +56,7 @@ var autot = [
 //      } 
     
 //     else {
+//         hakusana = data.trim()
 //         autot.forEach(a => {
 //             if (a.merkki.indexOf(data) > -1 ) {
 //                 console.log("Merkki: " + a.merkki + "vm. " + a.vuosimalli + "Hinta: " + a.hinta)}
@@ -64,17 +65,15 @@ var autot = [
 //         )
 //     }}
 // )
+//______________________________________________________________________________________________________________________________
     
 
+//EKA HARJOITUS
 
-
-
-     //Muussa tapauksessa lasketaan yhteen lukujen summia
-
-
-
-
-
+// //Taulukoiden olioita
+// var autot = [{id: 1, merkki: "Toyota", vuosimalli: 2006, hinta: 3000},
+//  {id: 2, merkki: "Ford", vuosimalli: 2016, hinta: 7500},
+//  {id: 3, merkki: "Lada", vuosimalli: 2021, hinta: 12000}]
 
 // console.log(autot)
 
