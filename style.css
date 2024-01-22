@@ -1,0 +1,45 @@
+#calculator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#calculation, #result {
+    margin-bottom: 20px;
+}
+.blank-button {
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #ddd; /* Slight border */
+    color: darkgrey; /* White text to make it invisible */
+}
+
+#result-box {
+    border: 2px solid #333; /* Solid border */
+    padding: 5px; /* Reduced padding */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background */
+    text-align: right; /* Align the result to the right */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow */
+    min-height: 30px; /* Reduced minimum height */
+    width: 225px; /* Set a specific width, adjust as needed */
+    margin: 0 auto; /* Center the box */
+}
+#calculation {
+    margin: 0;
+    font-size: 18px; /* Smaller font size for the calculation */
+    color: #666; /* Lighter color for the calculation */
+    height: 20px; /* Fixed height for the calculation */
+    overflow: hidden; /* Hide overflow */
+}
+
+#result {
+    margin: 0;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+
