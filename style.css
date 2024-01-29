@@ -31,9 +31,9 @@ button {
 }
 #calculation {
     margin: 0;
-    font-size: 18px; /* Smaller font size for the calculation */
+    font-size: 20px; /* Smaller font size for the calculation */
     color: #666; /* Lighter color for the calculation */
-    height: 20px; /* Fixed height for the calculation */
+    height: 30px; /* Fixed height for the calculation */
     overflow: hidden; /* Hide overflow */
 }
 
