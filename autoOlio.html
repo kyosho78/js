@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Auto-objekti</h1>
+    <h3>Tähän tulee auton tiedot</h3>
+    <p id="kaara"></p>
+    <script>
+        var auto = {
+            merkki: "Opel",
+            malli: "Insignia",
+            vari: "musta",
+            teho: 100,
+            vuosimalli: 2017,
+            moottori: "2,0 CDTI",
+            ika : function() {
+                let omaPvm = new Date();
+                return omaPvm.getFullYear() - this.vuosimalli ;
+            }
+        };
+
+        document.getElementById("kaara").innerHTML =
+            "Auton merkki on: " + auto.merkki + "<br>" +
+            " malli: " + auto.malli + ", vuosimalli: " + auto.vuosimalli +  "<br>" +
+            " väri: " + auto.vari + "<br>" +
+            " moottori: " + auto.moottori + "<br>" +
+            " moottorin teho: " + auto.teho + "<br>" +
+            " auton ikä on: " + auto.ika() + " vuotta " + "<br>";
+    </script>
+</body>
+</html>

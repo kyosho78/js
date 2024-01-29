@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<html>
+
+<body>
+    <h1>Kirjat</h1>
+
+    <div id="taulukko"></div>
+
+    <script>
+
+        var htmlTaulukko = `<table>
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Tekijä</th>
+                    <th>Genre</th>
+                    <th>Kirjoitusvuosi</th>
+                    <th>Ikä</th>
+                </tr>
+            </thead>
+            <tbody>`
+
+        var kirjatJson = `[{
+            "id": 1, "nimi": "Nälkäpeli", "sivumäärä": 200, "genre": "romaanit", "tekijä": "Susanne Collins", "kirjoitusvuosi": 2011
+        }, {
+            "id": 2, "nimi": "Viisikko", "sivumäärä": 140, "genre": "nuortenkirjat", "tekijä": "Enid Blyton", "kirjoitusvuosi": 1960
+        }
+        ]`
+        var kirjat = JSON.parse(kirjatJson)
+
+        var vuosi = new Date().getFullYear()
+
+        alert(new Date())
+
+        kirjat.map(k =>
+            htmlTaulukko += `<tr>
+            <td>${k.nimi}</td>
+            <td>${k.tekijä}</td>
+            <td>${k.genre}</td>
+            <td>${k.kirjoitusvuosi}</td>
+            <td>${vuosi - k.kirjoitusvuosi}</td>
+        </tr>`
+        )
+        htmlTaulukko += `</tbody></table>`
+
+        document.getElementById("taulukko").innerHTML = htmlTaulukko
+
+    </script>
+</body>
+
+</html>
